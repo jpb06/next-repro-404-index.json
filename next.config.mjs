@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  skipMiddlewareUrlNormalize: true,
   reactStrictMode: true,
-  basePath: "/app"
+  basePath: '/app',
 };
 
 export default nextConfig;
