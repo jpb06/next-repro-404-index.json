@@ -1,17 +1,17 @@
 import { ServerSideProps } from '@/types/server-side-props.type';
 import Link from 'next/link';
 
-export default function Home() {
+export default function Yolo() {
   return (
     <div>
-      Index
-      <Link href="/yolo">Yolo</Link>
+      Yolo
+      <Link href="/">Home</Link>
     </div>
   );
 }
 
 export const getServerSideProps = async ({ req, res }: ServerSideProps) => {
-  console.info('Index page getServerSideProps');
+  console.info('Yolo page getServerSideProps');
 
   return { props: { user: null } };
 };
